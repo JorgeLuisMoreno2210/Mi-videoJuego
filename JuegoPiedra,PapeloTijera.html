@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel y Tijera</title>
+    <link rel="stylesheet" href="css/Piedra,Papel,Tijera.css">
+    <link rel="icon" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Piedra, Papel o Tijera</h1>
+            <p>¡Haz tu elección y gana el juego!</p>
+        </header>
+        
+        <div class="choices">
+            <button class="choice" id="rock">
+                <img src="Images/Stone.png" alt="Piedra">
+                <!--<span>Piedra</span>-->
+            </button>
+            <button class="choice" id="paper">
+                <img src="Images/Paper.png" alt="Papel">
+                <!--<span>Papel</span>-->
+            </button>
+            <button class="choice" id="scissors">
+                <img src="Images/Scizors.png" alt="Tijera">
+                <!--<span>Tijera</span>-->
+            </button>
+        </div>
+
+        <div class="result">
+            <h2>Elige una opción para jugar</h2>
+            <div id="player-choice">Tú: <span></span></div>
+            <div id="computer-choice">Computadora: <span></span></div>
+            <div id="winner">Resultado: </div>
+        </div>
+    </div>
+
+    <script src="JS/Piedra,PapeloTjera.js"></script>
+</body>
+</html>

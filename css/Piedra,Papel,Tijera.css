@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF4E50, #F9D423);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    width: 400px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Esto permite que las opciones se ajusten si hay poco espacio */
+}
+
+.choice {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    padding: 15px;
+    width: 150px; /* Aumenta el tamaño del contenedor */
+    height: 150px; /* Tamaño cuadrado más grande */
+    border-radius: 50%; /* Contenedor circular */
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Agrega un poco de espacio entre las opciones */
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.choice img {
+    width: 90%; /* Las imágenes ocupan el 90% del contenedor */
+    height: 90%; /* Lo mismo para la altura */
+    object-fit: cover; /* Mantiene la imagen proporcional y cubriendo el contenedor */
+    border-radius: 50%; /* Imagen circular */
+}
+
+.choice span {
+    font-size: 1.1rem;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#player-choice, #computer-choice, #winner {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+#winner {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#player-choice span, #computer-choice span {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Media queries para adaptarse a pantallas más pequeñas */
+@media (max-width: 768px) {
+    .choice {
+        width: 120px; /* Tamaño más pequeño en pantallas más pequeñas */
+        height: 120px;
+    }
+    
+    .choice img {
+        width: 80%; /* Imagen más pequeña en pantallas pequeñas */
+        height: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        width: 90%; /* Hace el contenedor del juego más pequeño en móviles */
+    }
+}
